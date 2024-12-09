@@ -1,23 +1,27 @@
 import React, { useEffect, useRef, useState } from "react";
-import KeenSlider from "keen-slider";
-import "keen-slider/keen-slider.min.css";
 import { CaretRight } from "@phosphor-icons/react/dist/ssr/CaretRight";
 import { CaretLeft } from "@phosphor-icons/react/dist/ssr/CaretLeft";
 import Image from "next/image";
+import KeenSlider from "keen-slider"; // Ensure correct import
+import "keen-slider/keen-slider.min.css"; // Include styles
 
 function Testimonials() {
   const sliderRef = useRef<HTMLDivElement>(null);
-  const [slider, setSlider] = useState<KeenSlider | null>(null);
+  const [slider, setSlider] = useState<InstanceType<typeof KeenSlider> | null>(
+    null
+  );
 
   useEffect(() => {
     if (sliderRef.current) {
-      const sliderInstance = new KeenSlider(sliderRef.current, {
+      const keenInstance = new KeenSlider(sliderRef.current, {
         loop: true,
-        slides: { perView: 1, spacing: 10 },
+        slides: { perView: 1 },
       });
-      setSlider(sliderInstance);
+      setSlider(keenInstance);
 
-      return () => sliderInstance.destroy();
+      return () => {
+        keenInstance.destroy();
+      };
     }
   }, []);
 
