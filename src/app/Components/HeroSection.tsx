@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import en from "./translations/en";
 import marathi from "./translations/marathi";
 import { useLanguage } from "../Context/LanguageContext";
@@ -11,6 +11,7 @@ import { Bank } from "@phosphor-icons/react/dist/ssr/Bank";
 import { MapTrifold } from "@phosphor-icons/react/dist/ssr/MapTrifold";
 import { Building } from "@phosphor-icons/react/dist/ssr/Building";
 import { FileText } from "@phosphor-icons/react/dist/ssr/FileText";
+import Image from "next/image";
 
 function HeroSection() {
   //   const [language, setLanguage] = useState("en");
@@ -49,11 +50,12 @@ function HeroSection() {
               </div>
 
               <div>
-                <img
+                <Image
                   src="/images/HerosectionIMG.svg"
-                  // className="HerosectionIMG"
                   alt="HerosectionIMG"
                   className="h-auto w-auto"
+                  width={0}
+                  height={0}
                 />
               </div>
             </div>
@@ -65,7 +67,7 @@ function HeroSection() {
       <section className="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden antialiased">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
           <h2 className="text-2xl font-bold text-center mb-6">
-            "Your Trusted Partner for Perfect Business Documentation!" <br />{" "}
+            Your Trusted Partner for Perfect Business Documentation <br />{" "}
             Services
           </h2>
           <div className="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-16">

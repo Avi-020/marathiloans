@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import en from "./translations/en";
 import marathi from "./translations/marathi";
-import { useState } from "react";
 import { useLanguage } from "../Context/LanguageContext";
 
 function Navbar() {

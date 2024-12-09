@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import Head from "next/head";
 import KeenSlider from "keen-slider";
 import "keen-slider/keen-slider.min.css";
 import { CaretRight } from "@phosphor-icons/react/dist/ssr/CaretRight";
 import { CaretLeft } from "@phosphor-icons/react/dist/ssr/CaretLeft";
+import Image from "next/image";
 
 function Testimonials() {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -24,26 +24,22 @@ function Testimonials() {
   const testimonials = [
     {
       name: "John Doe",
-      image:
-        "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzNzd8MHwxfGFsbHwyfHx8fHx8fHwxNjgxODk3MTM2&ixlib=rb-4.0.3&q=80&w=400",
+      image: "/images/HerosectionIMG.svg",
       feedback: "Excellent service and friendly staff! lorem20 ",
     },
     {
       name: "Jane Smith",
-      image:
-        "https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzNzd8MHwxfGFsbHwxfHx8fHx8fHwxNjgxODk3MTM2&ixlib=rb-4.0.3&q=80&w=400",
+      image: "/images/HerosectionIMG.svg",
       feedback: "Very satisfied with the quick turnaround time.",
     },
     {
       name: "Emily Johnson",
-      image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzNzd8MHwxfGFsbHwzfHx8fHx8fHwxNjgxODk3MTM2&ixlib=rb-4.0.3&q=80&w=400",
+      image: "/images/HerosectionIMG.svg",
       feedback: "Highly recommend them for their expertise.",
     },
     {
       name: "Robert Brown",
-      image:
-        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzNzd8MHwxfGFsbHw0fHx8fHx8fHwxNjgxODk3MTM2&ixlib=rb-4.0.3&q=80&w=400",
+      image: "/images/HerosectionIMG.svg",
       feedback: "Professional team and great communication.",
     },
   ];
@@ -63,9 +59,12 @@ function Testimonials() {
               {/* <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl "> */}
               <div className="md:flex bg-[#1a37508e] p-5 md:p-20 ">
                 <div className="md:shrink-0">
-                  <img
+                  <Image
                     className="h-48 w-full object-cover md:h-full md:w-48"
                     src={testimonial.image}
+                    width={0}
+                    height={0}
+                    alt="not found"
                   />
                 </div>
                 <div className="p-8">
