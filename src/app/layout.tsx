@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Navbar from "./Components/Navbar";
+import { LanguageProvider } from "./Context/LanguageContext"; // Import LanguageProvider
 import "./globals.css";
 import Script from "next/script";
+import Footer from "./Components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,9 +39,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></Script>
-        <Script src="../path/to/flowbite/dist/flowbite.min.js"></Script>
-
-        {children}
+        <LanguageProvider>
+          {" "}
+          {/* Wrap the app with LanguageProvider */}
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

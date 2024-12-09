@@ -5,6 +5,7 @@ import Image from "next/image";
 import en from "./translations/en";
 import marathi from "./translations/marathi";
 import { useLanguage } from "../Context/LanguageContext";
+import Link from "next/link";
 
 function Navbar() {
   const { setLanguage, language } = useLanguage();
@@ -70,44 +71,46 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/about"
                   className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   {translations.navbar.title2}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/services"
                   className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   {translations.navbar.title3}
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   {translations.navbar.title4}
-                </a>
+                </Link>
               </li>
-              <div>
-                <label htmlFor="language" className="sr-only">
-                  Select Language
-                </label>
-                <select
-                  id="language"
-                  value={language}
-                  onChange={handleLanguageChange}
-                  className="bg-blue-500 text-white px-4 py-2 rounded"
-                >
-                  <option value="en">English</option>
-                  <option value="marathi">Marathi</option>
-                </select>
-              </div>
+              <li>
+                <div className="">
+                  <label htmlFor="language" className="sr-only">
+                    Select Language
+                  </label>
+                  <select
+                    id="language"
+                    value={language}
+                    onChange={handleLanguageChange}
+                    className="bg-[#011D49] text-white  rounded"
+                  >
+                    <option value="en">English</option>
+                    <option value="marathi">Marathi</option>
+                  </select>
+                </div>
+              </li>
             </ul>
           </div>
         </div>

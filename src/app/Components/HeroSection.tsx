@@ -12,6 +12,7 @@ import { MapTrifold } from "@phosphor-icons/react/dist/ssr/MapTrifold";
 import { Building } from "@phosphor-icons/react/dist/ssr/Building";
 import { FileText } from "@phosphor-icons/react/dist/ssr/FileText";
 import Image from "next/image";
+import { File, PhoneCall } from "@phosphor-icons/react/dist/ssr";
 
 function HeroSection() {
   //   const [language, setLanguage] = useState("en");
@@ -39,11 +40,15 @@ function HeroSection() {
                   <p className="mt-4 text-[#D9D9D9] md:text-xl text-l">
                     {translations.heroSection.subtitle}
                   </p>
-                  <button className="bg-[#FFD780] mt-4 hover:bg-[#FFD750] text-black  py-2 px-4 rounded-full">
+                  <button className="bg-[#FFD780] mt-4 hover:bg-[#FFD750] text-black  py-2 px-4 rounded-full inline-flex	">
+                    <File size={20} className="mr-1.5 mt-1 md:mr-2" />
+
                     {translations.heroSection.btn1}
                   </button>{" "}
                   <br />
-                  <button className="bg-white mt-4 hover:bg-slate-300 text-black  py-2 px-4 rounded-full ">
+                  <button className="bg-white mt-4 hover:bg-slate-300 text-black  py-2 px-4 rounded-full inline-flex">
+                    <PhoneCall size={20} className="mr-2 mt-1" />
+
                     {translations.heroSection.btn2}
                   </button>
                 </div>
@@ -66,10 +71,13 @@ function HeroSection() {
       {/* list start  */}
       <section className="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden antialiased">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
-          <h2 className="text-2xl font-bold text-center mb-6">
-            Your Trusted Partner for Perfect Business Documentation <br />{" "}
-            Services
+          <h2 className="text-5xl font-bold text-center mb-6">
+            Your Trusted Partner for Perfect Business Documentation !<br />
+            <span className="mt-3">Services:</span>
           </h2>
+          <p className="text-center text-2xl">
+            We provide end-to-end assistance with:{" "}
+          </p>
           <div className="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-16">
             <div className="w-full max-w-3xl mx-auto">
               <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[8.75rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
