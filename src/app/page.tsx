@@ -3,11 +3,11 @@ import HeroSection from "./Components/HeroSection";
 import { LanguageProvider } from "./Context/LanguageContext";
 import Footer from "./Components/Footer";
 
-export default function Home({ Component, pageProps }) {
+export default function Home() {
   return (
     <>
       <LanguageProvider>
-        <Navbar {...pageProps} />
+        <Navbar />
         <HeroSection />
         <Footer />
       </LanguageProvider>
