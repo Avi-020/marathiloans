@@ -1,4 +1,3 @@
-import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroSection";
 import { LanguageProvider } from "./Context/LanguageContext";
 
