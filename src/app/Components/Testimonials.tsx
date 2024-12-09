@@ -4,12 +4,11 @@ import { CaretLeft } from "@phosphor-icons/react/dist/ssr/CaretLeft";
 import Image from "next/image";
 import KeenSlider from "keen-slider"; // Ensure correct import
 import "keen-slider/keen-slider.min.css"; // Include styles
+import { KeenSliderInstance } from "keen-slider";
 
 function Testimonials() {
   const sliderRef = useRef<HTMLDivElement>(null);
-  const [slider, setSlider] = useState<InstanceType<typeof KeenSlider> | null>(
-    null
-  );
+  const [slider, setSlider] = useState<KeenSliderInstance | null>(null);
 
   useEffect(() => {
     if (sliderRef.current) {
