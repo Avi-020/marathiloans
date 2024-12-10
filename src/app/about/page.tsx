@@ -246,7 +246,7 @@ export default function About() {
               <h2 className="block w-full bg-gradient-to-b from-black to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
                 Build a Website That Your Customers Love
               </h2>
-              <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
+              <p className="mx-auto my-4 w-full max-w-xl bg-white text-center font-medium leading-relaxed tracking-wide text-gray-400">
                 Our templates allow for maximum customization. No technical
                 skills required our intuitive design tools let you get the job
                 done easily.
