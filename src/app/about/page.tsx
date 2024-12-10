@@ -278,7 +278,7 @@ export default function About() {
                 </div>
                 <h3 className="mt-6 text-gray-400">Customizable</h3>
                 <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-                  Tailor your landing page's look and feel, from the color
+                  Tailor your landing page s look and feel, from the color
                   scheme to the font size, to the design of the page.
                 </p>
               </div>
