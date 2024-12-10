@@ -1,4 +1,11 @@
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import {
+  TwitterLogo,
+  LinkedinLogo,
+  InstagramLogo,
+} from "@phosphor-icons/react/dist/ssr";
 
 export default function About() {
   return (
@@ -41,10 +48,12 @@ export default function About() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className=" flex-auto">
                     <div className="aspect-[4/5] w-full rounded-lg overflow-hidden">
-                      <img
-                        src="https://img.freepik.com/premium-photo/house-model-coin-vertical-image-saving-money-buy-new-house-loan-plan-business-inve_253401-6866.jpg?w=360"
+                      <Image
+                        src="/images/LOGO.svg"
                         alt="Feature 1"
                         className="object-cover w-full h-full"
+                        width={0}
+                        height={0}
                       />
                     </div>
                   </div>
@@ -55,10 +64,12 @@ export default function About() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className=" flex-auto">
                     <div className="aspect-[4/5] w-full rounded-lg overflow-hidden">
-                      <img
-                        src="https://images.pexels.com/photos/1662159/pexels-photo-1662159.jpeg?cs=srgb&dl=pexels-rickyrecap-1662159.jpg&fm=jpg"
+                      <Image
+                        src="/images/LOGO.svg"
                         alt="Feature 2"
                         className="object-cover w-full h-full"
+                        width={0}
+                        height={0}
                       />
                     </div>
                   </div>
@@ -69,10 +80,12 @@ export default function About() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className=" flex-auto">
                     <div className="aspect-[4/5] w-full rounded-lg overflow-hidden">
-                      <img
-                        src="https://w0.peakpx.com/wallpaper/513/93/HD-wallpaper-business-life-man-thumbnail.jpg"
+                      <Image
+                        src="/images/LOGO.svg"
                         alt="Feature 3"
                         className="object-cover w-full h-full"
+                        width={0}
+                        height={0}
                       />
                     </div>
                   </div>
@@ -92,10 +105,12 @@ export default function About() {
             <div className="p-20 sm:p-16 md:p-20 lg:p-24 flex flex-col md:flex-row px-4 sm:px-8 lg:px-24">
               {/* Image Section */}
               <div className="mr-10 flex text-center justify-center items-center w-full md:w-1/2">
-                <img
+                <Image
                   className="rounded-lg min-w-[100px] w-full h-auto md:w-auto"
                   src="/images/owner.svg"
                   alt="Image of myself"
+                  width={0}
+                  height={0}
                 />
               </div>
 
@@ -136,48 +151,32 @@ export default function About() {
                   id="social"
                   className="flex flex-wrap justify-start items-center gap-4"
                 >
-                  <a
+                  <Link
                     rel="noopener noreferrer"
                     href="#"
                     className="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white"
                   >
-                    <img
-                      className="mr-2 hover:scale-105 transition duration-300 ease-in-out"
-                      src="https://ucarecdn.com/1f465c47-4849-4935-91f4-29135d8607af/github2.svg"
-                      width="20px"
-                      height="20px"
-                      alt="Github"
-                    />
-                    <span>Visit my Github</span>
-                  </a>
-                  <a
+                    <InstagramLogo size={32} />
+                    <span>Visit my Instgram</span>
+                  </Link>
+                  <Link
                     rel="noopener noreferrer"
                     href="#"
                     className="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white"
                   >
-                    <img
-                      className="mr-2 hover:scale-105 transition duration-300 ease-in-out"
-                      src="https://ucarecdn.com/95eebb9c-85cf-4d12-942f-3c40d7044dc6/linkedin.svg"
-                      width="20px"
-                      height="20px"
-                      alt="LinkedIn"
-                    />
+                    <LinkedinLogo size={32} />
+
                     <span>Follow me on Linkedin</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     rel="noopener noreferrer"
                     href="#"
                     className="bg-gray-800 rounded-lg p-5 w-64 flex items-center gap-2 text-white"
                   >
-                    <img
-                      className="mr-2 hover:scale-105 transition duration-300 ease-in-out"
-                      src="https://ucarecdn.com/82d7ca0a-c380-44c4-ba24-658723e2ab07/"
-                      width="20px"
-                      height="20px"
-                      alt="Twitter"
-                    />
+                    <TwitterLogo size={32} />
+
                     <span>Follow me on Twitter</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

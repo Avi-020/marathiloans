@@ -22,7 +22,7 @@ function Navbar() {
     <div className="bg-[#011D49] text-white">
       <nav className=" border-gray-200 bg-[#011D49] text-white ">
         <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
+          <Link
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
@@ -33,7 +33,7 @@ function Navbar() {
               height={200}
               // className="md:w-1/2"
             />
-          </a>
+          </Link>
 
           <button
             data-collapse-toggle="navbar-default"
@@ -62,13 +62,13 @@ function Navbar() {
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-[#011D49] text-white md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent">
               <li>
-                <a
+                <Link
                   href="/"
                   className="block py-2 px-3 md:hover:text-blue-700 text-white bg-blue-700 rounded md:bg-transparent  md:p-0 dark:text-white md:dark:text-blue-500"
                   aria-current="page"
                 >
                   {translations.navbar.title1}
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
