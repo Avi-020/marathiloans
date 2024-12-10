@@ -28,22 +28,26 @@ function Testimonials() {
     {
       name: "John Doe",
       image: "/images/HerosectionIMG.svg",
-      feedback: "Excellent service and friendly staff! lorem20 ",
+      feedback:
+        " Excellent service and friendly staff! lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, alias dolor repudiandae a magni id nesciunt nobis pariatur maiores inventore eius, debitis blanditiis. Atque labore ratione culpa, tenetur sed inventore!      ",
     },
     {
       name: "Jane Smith",
       image: "/images/HerosectionIMG.svg",
-      feedback: "Very satisfied with the quick turnaround time.",
+      feedback:
+        " Excellent service and friendly staff! lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, alias dolor repudiandae a magni id nesciunt nobis pariatur maiores inventore eius, debitis blanditiis. Atque labore ratione culpa, tenetur sed inventore!      ",
     },
     {
       name: "Emily Johnson",
       image: "/images/HerosectionIMG.svg",
-      feedback: "Highly recommend them for their expertise.",
+      feedback:
+        " Excellent service and friendly staff! lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, alias dolor repudiandae a magni id nesciunt nobis pariatur maiores inventore eius, debitis blanditiis. Atque labore ratione culpa, tenetur sed inventore!      ",
     },
     {
       name: "Robert Brown",
       image: "/images/HerosectionIMG.svg",
-      feedback: "Professional team and great communication.",
+      feedback:
+        " Excellent service and friendly staff! lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, alias dolor repudiandae a magni id nesciunt nobis pariatur maiores inventore eius, debitis blanditiis. Atque labore ratione culpa, tenetur sed inventore!      ",
     },
   ];
 
@@ -63,7 +67,7 @@ function Testimonials() {
               <div className="md:flex bg-[#1a37508e] p-5 md:p-20 ">
                 <div className="md:shrink-0">
                   <Image
-                    className="h-48 w-full object-cover md:h-full md:w-48"
+                    className="h-48 w-full object-cover md:h-full md:w-48 bg-black"
                     src={testimonial.image}
                     width={0}
                     height={0}

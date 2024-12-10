@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,8 +8,16 @@ import {
   LinkedinLogo,
   InstagramLogo,
 } from "@phosphor-icons/react/dist/ssr";
+import { useLanguage } from "../Context/LanguageContext";
+import en from "../Components/translations/en";
+import marathi from "../Components/translations/marathi";
 
 export default function About() {
+  //   const [language, setLanguage] = useState("en");
+  const { language } = useLanguage();
+
+  // Load translations based on the selected language
+  const translations = language === "en" ? en : marathi;
   return (
     <>
       <section className="relative ">
@@ -24,15 +34,10 @@ export default function About() {
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="md:pr-12">
                   <h1 className="text-white font-semibold md:text-5xl text-3xl">
-                    About Us
+                    {translations.about.tittle}
                   </h1>
                   <p className="mt-4 md:text-lg text-xs text-blueGray-200 text-white">
-                    Welcome! We at Marathi Loan Consultancy & Servises are a
-                    trusted consultancy, committed to helping entrepreneurs and
-                    business owners achieve their financial goals. Specializing
-                    exclusively in business loans, our mission is to simplify
-                    the often-complicated loan process and make financial
-                    support accessible.
+                    {translations.about.CoTittle}
                   </p>
                 </div>
               </div>
@@ -241,15 +246,13 @@ export default function About() {
           >
             <div className="relative mx-auto max-w-5xl text-center">
               <span className="text-black-400 my-3 flex items-center justify-center font-medium uppercase tracking-wider">
-                Why choose us
+                {translations.about.WhyChooseUs.tittle}
               </span>
               <h2 className="block w-full bg-gradient-to-b from-black to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
-                Build a Website That Your Customers Love
+                {translations.about.WhyChooseUs.CoTittle}
               </h2>
               <p className="mx-auto my-4 w-full max-w-xl bg-white text-center font-medium leading-relaxed tracking-wide text-gray-400">
-                Our templates allow for maximum customization. No technical
-                skills required our intuitive design tools let you get the job
-                done easily.
+                {translations.about.WhyChooseUs.description}
               </p>
             </div>
 
@@ -276,11 +279,9 @@ export default function About() {
                     <line x1="17" y1="17" x2="17" y2="17.01"></line>
                   </svg>
                 </div>
-                <h3 className="mt-6 text-gray-400">Customizable</h3>
-                <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-                  Tailor your landing page s look and feel, from the color
-                  scheme to the font size, to the design of the page.
-                </p>
+                <h3 className="mt-6 text-gray-400">
+                  {translations.about.WhyChooseUs.Point1}
+                </h3>
               </div>
 
               {/* Feature 2 */}
@@ -302,11 +303,9 @@ export default function About() {
                     <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3"></polyline>
                   </svg>
                 </div>
-                <h3 className="mt-6 text-gray-400">Fast Performance</h3>
-                <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-                  We build our templates for speed in mind, for super-fast load
-                  times so your customers never waver.
-                </p>
+                <h3 className="mt-6 text-gray-400">
+                  {translations.about.WhyChooseUs.Point2}
+                </h3>
               </div>
 
               {/* Feature 3 */}
@@ -333,11 +332,9 @@ export default function About() {
                     <line x1="16" y1="17" x2="14.5" y2="18.5"></line>
                   </svg>
                 </div>
-                <h3 className="mt-6 text-gray-400">Fully Featured</h3>
-                <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-                  Everything you need to succeed and launch your landing page,
-                  right out of the box. No need to install anything else.
-                </p>
+                <h3 className="mt-6 text-gray-400">
+                  {translations.about.WhyChooseUs.Point3}
+                </h3>
               </div>
             </div>
           </section>
