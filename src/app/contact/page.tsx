@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-function page() {
+function ContactPage() {
   const [openQuestions, setOpenQuestions] = useState<number | null>(null);
 
   const toggleQuestion = (index: number) => {
@@ -147,4 +147,4 @@ function page() {
   );
 }
 
-export default page;
+export default ContactPage;
