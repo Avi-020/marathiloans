@@ -117,7 +117,7 @@ export default function About() {
               {/* Content Section */}
               <div className="w-full sm:w-[70%] md:w-[60%] lg:w-[50%]">
                 <h1 className="text-black font-bold text-3xl mt-6 mb-8">
-                  Hey, it's me, Mr. Prashant Bhakare
+                  Hey, its me, Mr. Prashant Bhakare
                 </h1>
                 <p className="text-black w-full sm:w-[35rem] md:w-[30rem] lg:w-[25rem] mb-10">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
@@ -248,7 +248,7 @@ export default function About() {
               </h2>
               <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-400">
                 Our templates allow for maximum customization. No technical
-                skills required – our intuitive design tools let you get the job
+                skills required our intuitive design tools let you get the job
                 done easily.
               </p>
             </div>
