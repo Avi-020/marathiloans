@@ -40,8 +40,6 @@ export default function RootLayout({
       >
         <Script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></Script>
         <LanguageProvider>
-          {" "}
-          {/* Wrap the app with LanguageProvider */}
           <Navbar />
           <main>{children}</main>
           <Footer />
