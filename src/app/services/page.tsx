@@ -14,7 +14,7 @@ import {
   Handshake,
 } from "@phosphor-icons/react/dist/ssr";
 
-function Page() {
+function ServicesPage() {
   //   const [language, setLanguage] = useState("en");
   const { language } = useLanguage();
 
@@ -184,4 +184,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default ServicesPage;
