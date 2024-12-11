@@ -20,7 +20,6 @@ import {
   // MapTrifold,
   Tag,
   Handshake,
-  Trash,
 } from "@phosphor-icons/react/dist/ssr";
 
 function HeroSection() {
