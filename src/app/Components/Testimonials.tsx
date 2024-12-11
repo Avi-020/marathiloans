@@ -5,10 +5,12 @@ import Image from "next/image";
 import KeenSlider from "keen-slider"; // Ensure correct import
 import "keen-slider/keen-slider.min.css"; // Include styles
 import { KeenSliderInstance } from "keen-slider";
+import { useLanguage } from "../Context/LanguageContext";
 
 function Testimonials() {
   const sliderRef = useRef<HTMLDivElement>(null);
   const [slider, setSlider] = useState<KeenSliderInstance | null>(null);
+  const { language } = useLanguage();
 
   useEffect(() => {
     if (sliderRef.current) {
@@ -24,32 +26,61 @@ function Testimonials() {
     }
   }, []);
 
-  const testimonials = [
+  const ENGtestimonials = [
     {
       name: "John Doe",
       image: "/images/HerosectionIMG.svg",
       feedback:
-        " Excellent service and friendly staff! lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, alias dolor repudiandae a magni id nesciunt nobis pariatur maiores inventore eius, debitis blanditiis. Atque labore ratione culpa, tenetur sed inventore!      ",
+        "Excellent service and friendly staff! The documentation process was very simple and fast. Received proper guidance for my business. I will definitely use their service again!",
     },
     {
       name: "Jane Smith",
       image: "/images/HerosectionIMG.svg",
       feedback:
-        " Excellent service and friendly staff! lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, alias dolor repudiandae a magni id nesciunt nobis pariatur maiores inventore eius, debitis blanditiis. Atque labore ratione culpa, tenetur sed inventore!      ",
+        "They helped me a lot in getting a loan for my business. Everything went smoothly with their guidance. I am very impressed with their expertise.",
     },
     {
       name: "Emily Johnson",
       image: "/images/HerosectionIMG.svg",
       feedback:
-        " Excellent service and friendly staff! lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, alias dolor repudiandae a magni id nesciunt nobis pariatur maiores inventore eius, debitis blanditiis. Atque labore ratione culpa, tenetur sed inventore!      ",
+        "Very professional and seamless service! They checked my documents and assisted with the application. Their service gave me the opportunity to expand my business.",
     },
     {
       name: "Robert Brown",
       image: "/images/HerosectionIMG.svg",
       feedback:
-        " Excellent service and friendly staff! lorem20 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, alias dolor repudiandae a magni id nesciunt nobis pariatur maiores inventore eius, debitis blanditiis. Atque labore ratione culpa, tenetur sed inventore!      ",
+        "Extremely helpful service! They provided detailed information about the schemes and made the application process very easy. I am very happy with the support.",
     },
   ];
+  const MARATHItestimonials = [
+    {
+      name: "जॉन डो",
+      image: "/images/HerosectionIMG.svg",
+      feedback:
+        "उत्कृष्ट सेवा आणि मैत्रीपूर्ण कर्मचारी! कागदपत्रांची प्रक्रिया खूप सोपी आणि वेगवान होती. व्यवसायासाठी योग्य मार्गदर्शन मिळाले. मी नक्कीच पुन्हा सेवा घेईन!",
+    },
+    {
+      name: "जेन स्मिथ",
+      image: "/images/HerosectionIMG.svg",
+      feedback:
+        "माझ्या व्यवसायासाठी कर्ज मिळवण्यात खूप मदत झाली. त्यांच्या मार्गदर्शनामुळे सर्व गोष्टी सहजतेने पार पडल्या. त्यांच्या अनुभवाबद्दल खूप प्रभावित आहे.",
+    },
+    {
+      name: "एमिली जॉन्सन",
+      image: "/images/HerosectionIMG.svg",
+      feedback:
+        "खूपच व्यावसायिक आणि सुलभ सेवा! कागदपत्रे तपासून फॉर्म भरून दिला. मला त्यांच्या सेवेमुळे व्यवसाय विस्ताराची संधी मिळाली.",
+    },
+    {
+      name: "रॉबर्ट ब्राउन",
+      image: "/images/HerosectionIMG.svg",
+      feedback:
+        "अत्यंत उपयुक्त सेवा! त्यांनी योजनांबद्दल सविस्तर माहिती दिली आणि अर्ज प्रक्रिया खूपच सोपी बनवली. मी खूप आनंदी आहे.",
+    },
+  ];
+
+  const testimonials =
+    language === "en" ? ENGtestimonials : MARATHItestimonials;
 
   return (
     <div>
@@ -78,9 +109,7 @@ function Testimonials() {
                   <div className="uppercase tracking-wide text-sm text-black-500 font-semibold">
                     {testimonial.name}
                   </div>
-                  <p className="block mt-1 text-lg leading-tight font-medium text-black">
-                    Incredible accommodation for your team
-                  </p>
+
                   <p className="mt-2 text-slate-700">{testimonial.feedback}</p>
                 </div>
                 {/* </div> */}

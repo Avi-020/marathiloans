@@ -19,8 +19,8 @@ function Navbar() {
   const translations = language === "en" ? en : marathi;
 
   return (
-    <div className="bg-[#011D49] text-white">
-      <nav className=" border-gray-200 bg-[#011D49] text-white ">
+    <div className="bg-[#011D49] text-white ">
+      <nav className=" border-gray-200 bg-[#011D49] text-white md:pt-5 md:px-20">
         <div className=" flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             href="#"

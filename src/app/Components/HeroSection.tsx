@@ -12,7 +12,16 @@ import { MapTrifold } from "@phosphor-icons/react/dist/ssr/MapTrifold";
 import { Building } from "@phosphor-icons/react/dist/ssr/Building";
 import { FileText } from "@phosphor-icons/react/dist/ssr/FileText";
 import Image from "next/image";
-import { File, PhoneCall } from "@phosphor-icons/react/dist/ssr";
+import {
+  File,
+  PhoneCall,
+  ClipboardText,
+  Pencil,
+  // MapTrifold,
+  Tag,
+  Handshake,
+  Trash,
+} from "@phosphor-icons/react/dist/ssr";
 
 function HeroSection() {
   //   const [language, setLanguage] = useState("en");
@@ -30,7 +39,7 @@ function HeroSection() {
         className=" md:bg-contain"
       >
         <section>
-          <div className="mx-auto max-w-screen-xl px-4  md:pb-72 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-screen-xl px-4  md:pb-52 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
               <div>
                 <div className="max-w-lg md:max-w-none">
@@ -69,125 +78,84 @@ function HeroSection() {
       </div>
 
       {/* feature start */}
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-slate-50 dark:bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="max-w-screen-md mb-8 lg:mb-16">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              Designed for business teams like yours
+              {translations.features.title}
             </h2>
             <p className="text-gray-500 sm:text-xl dark:text-gray-400">
-              Here at Flowbite we focus on markets where technology, innovation,
-              and capital can unlock long-term value and drive economic growth.
+              {translations.features.coTitle}
             </p>
           </div>
           <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
+                <ClipboardText size={32} />
               </div>
               <h3 className="mb-2 text-xl font-bold dark:text-white">
-                Marketing
+                {translations.features.point1.title}
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Plan it, create it, launch it. Collaborate seamlessly with all
-                the organization and hit your marketing goals every month with
-                our marketing plan.
+                {translations.features.point1.description}
               </p>
             </div>
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
-                </svg>
+                <Pencil size={32} />
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">Legal</h3>
+              <h3 className="mb-2 text-xl font-bold dark:text-white">
+                {" "}
+                {translations.features.point6.title}
+              </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Protect your organization, devices and stay compliant with our
-                structured workflows and custom permissions made for you.
+                {translations.features.point6.description}
               </p>
             </div>
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
-                </svg>
+                <File size={32} />
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">Legal</h3>
+              <h3 className="mb-2 text-xl font-bold dark:text-white">
+                {translations.features.point2.title}
+              </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Protect your organization, devices and stay compliant with our
-                structured workflows and custom permissions made for you.
+                {translations.features.point2.description}
               </p>
             </div>
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
-                </svg>
+                <MapTrifold size={32} />
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">Legal</h3>
+              <h3 className="mb-2 text-xl font-bold dark:text-white">
+                {translations.features.point3.title}
+              </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Protect your organization, devices and stay compliant with our
-                structured workflows and custom permissions made for you.
+                {translations.features.point3.description}
               </p>
             </div>
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
-                </svg>
+                <Tag size={32} />
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">Legal</h3>
+              <h3 className="mb-2 text-xl font-bold dark:text-white">
+                {" "}
+                {translations.features.point4.title}
+              </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Protect your organization, devices and stay compliant with our
-                structured workflows and custom permissions made for you.
+                {translations.features.point4.description}
               </p>
             </div>
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <svg
-                  className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
-                </svg>
+                <Handshake size={32} />
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">Legal</h3>
+              <h3 className="mb-2 text-xl font-bold dark:text-white">
+                {" "}
+                {translations.features.point5.title}
+              </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Protect your organization, devices and stay compliant with our
-                structured workflows and custom permissions made for you.
+                {translations.features.point5.description}
               </p>
             </div>
             {/* Additional cards omitted for brevity */}
@@ -197,15 +165,15 @@ function HeroSection() {
 
       {/* feature end  */}
 
-      {/* list start  */}
+      {/* list start   key points  */}
       <section className="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden antialiased">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
           <h2 className="text-5xl font-bold text-center mb-6">
-            Your Trusted Partner for Perfect Business Documentation !<br />
-            <span className="mt-3">Services:</span>
+            {translations.KeyPoints.title}
+            <br />
           </h2>
           <p className="text-center text-2xl">
-            We provide end-to-end assistance with:{" "}
+            {translations.KeyPoints.description}
           </p>
           <div className="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-16">
             <div className="w-full max-w-3xl mx-auto">
@@ -220,15 +188,12 @@ function HeroSection() {
                     </div>
                     <div className="text-slate-500 ml-14">
                       <span className="text-slate-900 font-bold">
-                        Business Plan Preparation
+                        {translations.KeyPoints.points[0].title}
                       </span>{" "}
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border border-slate-200 text-slate-500 shadow ml-14 md:ml-44">
-                    Detailed project reports and financial projections. Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-                    minus, blanditiis earum dolor inventore dolore illo sint.
-                    Ullam, aliquid et.
+                    {translations.KeyPoints.points[0].description}
                   </div>
                 </div>
 
@@ -242,12 +207,12 @@ function HeroSection() {
                     </div>
                     <div className="text-slate-500 ml-14">
                       <span className="text-slate-900 font-bold">
-                        Document Verification
+                        {translations.KeyPoints.points[1].title}
                       </span>{" "}
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border border-slate-200 text-slate-500 shadow ml-14 md:ml-44">
-                    Income proof, identity, and address documents.
+                    {translations.KeyPoints.points[1].description}
                   </div>
                 </div>
 
@@ -261,12 +226,12 @@ function HeroSection() {
                     </div>
                     <div className="text-slate-500 ml-14">
                       <span className="text-slate-900 font-bold">
-                        Bank Statements
+                        {translations.KeyPoints.points[2].title}
                       </span>{" "}
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border border-slate-200 text-slate-500 shadow ml-14 md:ml-44">
-                    Proper format and creditworthiness support.
+                    {translations.KeyPoints.points[2].description}
                   </div>
                 </div>
 
@@ -280,12 +245,12 @@ function HeroSection() {
                     </div>
                     <div className="text-slate-500 ml-14">
                       <span className="text-slate-900 font-bold">
-                        Scheme-Specific
+                        {translations.KeyPoints.points[3].title}
                       </span>{" "}
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border border-slate-200 text-slate-500 shadow ml-14 md:ml-44">
-                    Guidance – Annasaheb Patil Yojana & PMEGP documentation.
+                    {translations.KeyPoints.points[3].description}
                   </div>
                 </div>
 
@@ -299,12 +264,12 @@ function HeroSection() {
                     </div>
                     <div className="text-slate-500 ml-14">
                       <span className="text-slate-900 font-bold">
-                        Business Registration
+                        {translations.KeyPoints.points[4].title}
                       </span>{" "}
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border border-slate-200 text-slate-500 shadow ml-14 md:ml-44">
-                    Udyam, GST, and MSME certification assistance.
+                    {translations.KeyPoints.points[4].description}
                   </div>
                 </div>
 
@@ -318,12 +283,12 @@ function HeroSection() {
                     </div>
                     <div className="text-slate-500 ml-14">
                       <span className="text-slate-900 font-bold">
-                        Loan Application Support
+                        {translations.KeyPoints.points[5].title}
                       </span>{" "}
                     </div>
                   </div>
                   <div className="bg-white p-4 rounded border border-slate-200 text-slate-500 shadow ml-14 md:ml-44">
-                    Compiling and submitting all required documents.
+                    {translations.KeyPoints.points[5].description}
                   </div>
                 </div>
               </div>
@@ -343,7 +308,9 @@ function HeroSection() {
                 5
               </span>
             </div>
-            <span className="block opacity-75 -mb-1">Years Experience</span>
+            <span className="block opacity-75 -mb-1">
+              {language === "en" ? "Years Experience" : "वर्षांचा अनुभव"}
+            </span>
           </div>
         </div>
 
@@ -354,7 +321,9 @@ function HeroSection() {
                 100+
               </span>
             </div>
-            <span className="block opacity-75 -mb-1">Monthly Files</span>
+            <span className="block opacity-75 -mb-1">
+              {language === "en" ? "Monthly Files" : "मासिक फायली"}
+            </span>
           </div>
         </div>
 
@@ -365,7 +334,9 @@ function HeroSection() {
                 20K
               </span>
             </div>
-            <span className="block opacity-75 -mb-1">Happy Customers</span>
+            <span className="block opacity-75 -mb-1">
+              {language === "en" ? "Happy Customers" : "आनंदी ग्राहक"}
+            </span>
           </div>
         </div>
 
@@ -376,7 +347,9 @@ function HeroSection() {
                 36
               </span>
             </div>
-            <span className="block opacity-75 -mb-1">District</span>
+            <span className="block opacity-75 -mb-1">
+              {language === "en" ? "District" : "जिल्हा"}
+            </span>
           </div>
         </div>
       </div>

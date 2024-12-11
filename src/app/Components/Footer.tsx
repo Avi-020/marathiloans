@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "../Context/LanguageContext";
 
 export default function Footer() {
+  const { language } = useLanguage();
   return (
     <div>
       <footer className="bg-[#011D49]">
@@ -20,7 +24,9 @@ export default function Footer() {
               </div>
 
               <p className="mt-4 max-w-xs text-white">
-                Marathi Loan: Your Gateway to Business Success
+                {language === "en"
+                  ? "Marathi Loan: Your Gateway to Business Success"
+                  : "मराठी लोण : व्यवसायाच्या यशासाठी तुमचे प्रवेशद्वार"}
               </p>
 
               <ul className="mt-8 flex gap-6">
@@ -144,7 +150,9 @@ export default function Footer() {
 
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
               <div>
-                <p className="font-medium text-white">Company</p>
+                <p className="font-medium text-white">
+                  {language === "en" ? "Company" : "कंपनी"}
+                </p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -153,7 +161,7 @@ export default function Footer() {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      About{" "}
+                      {language === "en" ? "Home page" : "मुख्यपृष्ठ"}
                     </Link>
                   </li>
 
@@ -163,7 +171,7 @@ export default function Footer() {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      Meet the Team{" "}
+                      {language === "en" ? "About us" : "आमच्याबद्दल"}
                     </Link>
                   </li>
 
@@ -173,14 +181,19 @@ export default function Footer() {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      Accounts Review{" "}
+                      {language === "en"
+                        ? "Contact us"
+                        : "आमच्याशी संपर्क साधा"}
                     </Link>
                   </li>
                 </ul>
               </div>
 
               <div>
-                <p className="font-medium text-white">Helpful Links</p>
+                <p className="font-medium text-white">
+                  {" "}
+                  {language === "en" ? " Helpful Links" : "उपयुक्त लिंक्स"}
+                </p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -189,7 +202,7 @@ export default function Footer() {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      Contact{" "}
+                      {language === "en" ? "Help" : "मदत"}
                     </Link>
                   </li>
 
@@ -199,7 +212,7 @@ export default function Footer() {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      FAQs{" "}
+                      {language === "en" ? "FAQs" : "सामान्य प्रश्न"}
                     </Link>
                   </li>
 
@@ -209,7 +222,9 @@ export default function Footer() {
                       className="text-white transition hover:opacity-75"
                     >
                       {" "}
-                      Live Chat{" "}
+                      {language === "en"
+                        ? "Blogs and News"
+                        : "ब्लॉग आणि बातम्या"}
                     </Link>
                   </li>
                 </ul>
@@ -218,7 +233,7 @@ export default function Footer() {
           </div>
 
           <p className="text-xs text-white">
-            &copy; 2022. Company Name. All rights reserved.
+            &copy; 2024. Creative Edge. All rights reserved.
           </p>
         </div>
       </footer>

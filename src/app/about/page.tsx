@@ -122,7 +122,9 @@ export default function About() {
               {/* Content Section */}
               <div className="w-full sm:w-[70%] md:w-[60%] lg:w-[50%]">
                 <h1 className="text-black font-bold text-3xl mt-6 mb-8">
-                  Hey, its me, Mr. Prashant Bhakare
+                  {language === "en"
+                    ? " Hey, its me, Mr. Prashant Bhakare"
+                    : "नमस्कार , मी  प्रशान्त भखारे"}
                 </h1>
                 <p className="text-black w-full sm:w-[35rem] md:w-[30rem] lg:w-[25rem] mb-10">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
