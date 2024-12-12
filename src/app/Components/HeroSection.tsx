@@ -21,6 +21,7 @@ import {
   Tag,
   Handshake,
 } from "@phosphor-icons/react/dist/ssr";
+import Blog from "../blog/page";
 
 function HeroSection() {
   //   const [language, setLanguage] = useState("en");
@@ -35,7 +36,7 @@ function HeroSection() {
           backgroundImage: `url("/images/BG.png")`,
           backgroundSize: "cover",
         }}
-        className=" md:bg-contain"
+        className=" md:bg-contain "
       >
         <section>
           <div className="mx-auto max-w-screen-xl px-4  md:pb-52 sm:px-6 lg:px-8">
@@ -354,6 +355,8 @@ function HeroSection() {
       </div>
 
       {/* ENd  */}
+
+      <Blog />
 
       <Testimonials />
 
