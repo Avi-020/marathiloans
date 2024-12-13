@@ -97,10 +97,10 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  href="#emi-calculator"
+                  href="/services"
                   className="block py-2 px-3 text-white rounded md:hover: bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                 >
-                  EMI CALCULATOR
+                  {language === "en" ? "EMI CALCULATOR" : "ईएमआय कॅल्क्युलेटर"}
                 </Link>
               </li>
 

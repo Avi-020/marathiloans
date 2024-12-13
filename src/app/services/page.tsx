@@ -13,6 +13,7 @@ import {
   Tag,
   Handshake,
 } from "@phosphor-icons/react/dist/ssr";
+import Calculator from "../Components/Calculator";
 
 function ServicesPage() {
   //   const [language, setLanguage] = useState("en");
@@ -153,6 +154,8 @@ function ServicesPage() {
       {/* feature end  */}
 
       {/* feature end  */}
+
+      <Calculator />
 
       {/* map img  */}
 
