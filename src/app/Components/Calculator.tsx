@@ -2,12 +2,12 @@
 import { useState } from "react";
 
 export default function Calculator() {
-  const [loanAmount, setLoanAmount] = useState("");
-  const [annualRate, setAnnualRate] = useState("");
-  const [loanTenure, setLoanTenure] = useState("");
-  const [emi, setEmi] = useState(null);
-  const [totalInterest, setTotalInterest] = useState(null);
-  const [totalPayment, setTotalPayment] = useState(null);
+  const [loanAmount, setLoanAmount] = useState<string>("");
+  const [annualRate, setAnnualRate] = useState<string>("");
+  const [loanTenure, setLoanTenure] = useState<string>("");
+  const [emi, setEmi] = useState<string | null>(null);
+  const [totalInterest, setTotalInterest] = useState<string | null>(null);
+  const [totalPayment, setTotalPayment] = useState<string | null>(null);
 
   const calculateEMI = () => {
     const P = parseFloat(loanAmount);
