@@ -96,6 +96,15 @@ function Navbar() {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="#emi-calculator"
+                  className="block py-2 px-3 text-white rounded md:hover: bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
+                >
+                  EMI CALCULATOR
+                </Link>
+              </li>
+
+              <li>
                 <div className="">
                   <label htmlFor="language" className="sr-only">
                     Select Language

@@ -22,6 +22,7 @@ import {
   Handshake,
 } from "@phosphor-icons/react/dist/ssr";
 import Blog from "../blog/page";
+import Calculator from "./Calculator";
 
 function HeroSection() {
   //   const [language, setLanguage] = useState("en");
@@ -359,6 +360,8 @@ function HeroSection() {
       <Blog />
 
       <Testimonials />
+
+      <Calculator />
 
       {/* <div className="stepper ml-10  flex justify-center">
         <ol className="relative text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400">

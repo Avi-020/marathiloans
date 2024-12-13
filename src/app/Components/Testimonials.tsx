@@ -94,7 +94,7 @@ function Testimonials() {
               key={index}
               className="keen-slider__slide  rounded-lg overflow-hidden md:max-w-2xl "
             >
-              <div className="md:flex bg-[#1a37508e] p-5 md:p-20 ">
+              {/* <div className="md:flex bg-[#1a37508e] p-5 md:p-20 ">
                 <div className="md:shrink-0">
                   <Image
                     className="h-48 w-full object-cover md:h-full md:w-48 bg-black"
@@ -111,7 +111,7 @@ function Testimonials() {
 
                   <p className="mt-2 text-slate-700">{testimonial.feedback}</p>
                 </div>
-              </div>
+              </div> */}
 
               {/* <div className="space-y-4 max-w-full mx-auto px-4 ">
                 <svg
@@ -142,6 +142,73 @@ function Testimonials() {
                   </p>
                 </div>
               </div> */}
+
+              <div className="max-w-4xl mx-auto bg-gray-100 rounded-xl shadow-md overflow-hidden md:max-w-2xl ">
+                <div className="md:flex">
+                  <div className="md:shrink-0 p-10">
+                    <Image
+                      width={0}
+                      height={0}
+                      className="h-48 w-full object-cover md:h-full md:w-48 bg-black"
+                      src={testimonial.image}
+                      alt="User profile picture"
+                    />
+                  </div>
+                  <div className="p-8">
+                    <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                      Customer Testimonial
+                    </div>
+                    <p className="mt-2 text-slate-500">
+                      {testimonial.feedback}
+                    </p>
+                    <div className="mt-4">
+                      <span className="text-slate-900 font-bold">
+                        Sarah Johnson
+                      </span>
+                      <span className="text-slate-600 text-sm ml-2">
+                        CEO, TechInnovate
+                      </span>
+                    </div>
+                    <div className="mt-4 flex items-center">
+                      <svg
+                        className="h-5 w-5 text-yellow-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                      </svg>
+                      <svg
+                        className="h-5 w-5 text-yellow-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                      </svg>
+                      <svg
+                        className="h-5 w-5 text-yellow-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                      </svg>
+                      <svg
+                        className="h-5 w-5 text-yellow-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                      </svg>
+                      <svg
+                        className="h-5 w-5 text-yellow-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
