@@ -9,7 +9,7 @@ export default function Calculator() {
   const [emi, setEmi] = useState<string | null>(null);
   const [totalInterest, setTotalInterest] = useState<string | null>(null);
   const [totalPayment, setTotalPayment] = useState<string | null>(null);
-  const { setLanguage, language } = useLanguage();
+  const { language } = useLanguage();
 
   const calculateEMI = () => {
     const P = parseFloat(loanAmount);
