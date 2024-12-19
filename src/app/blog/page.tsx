@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Blog = () => {
   const cards = [
@@ -47,7 +48,7 @@ const Blog = () => {
             href="#"
           >
             <div className="aspect-w-16 aspect-h-10">
-              <img
+              <Image
                 className="w-full object-cover rounded-xl"
                 src={card.image}
                 alt={card.alt}
