@@ -169,7 +169,7 @@ function HeroSection() {
       {/* list start   key points  */}
       <section className="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden antialiased">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
-          <h2 className="text-5xl font-bold text-center mb-6">
+          <h2 className="text-4xl font-bold text-center mb-6">
             {translations.KeyPoints.title}
             <br />
           </h2>

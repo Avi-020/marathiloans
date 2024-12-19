@@ -4,22 +4,20 @@ import Image from "next/image";
 const Blog = () => {
   const cards = [
     {
-      image:
-        "https://www.globalcu.org/contentassets/16825d85488b416db019b1e133dbbb5d/business-commercial-loans_product-callout.jpg",
+      image: "/images/BG.png",
       title: "From Dreams to Reality: How We Helped a Startup Thrive",
       linkText: "Read more",
       alt: "Unity Blog Image",
     },
     {
-      image:
-        "https://www.mulacapital.co.ke/wp-content/uploads/2023/03/Mula-Capital-Limited-Secured-Business-Loans.jpg",
+      image: "/images/BG.png",
       title: "Overcoming Challenges: A Success Story of Business Expansion",
+
       linkText: "Read more",
       alt: "Living Spaces Blog Image",
     },
     {
-      image:
-        "https://missouribusiness.net/wp-content/uploads/2021/12/top-tips-to-get-a-business-loan.jpg",
+      image: "/images/BG.png",
       title: "Empowering Entrepreneurs: A Tale of Financial Transformation",
       linkText: "Read more",
       alt: "Atlassian Blog Image",
@@ -52,6 +50,8 @@ const Blog = () => {
                 className="w-full object-cover rounded-xl"
                 src={card.image}
                 alt={card.alt}
+                width={0}
+                height={0}
               />
             </div>
             <h3 className="mt-5 text-xl text-gray-800 dark:text-neutral-300 dark:hover:text-white">
