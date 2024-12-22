@@ -86,7 +86,9 @@ function Testimonials() {
     <div>
       <div className="max-w-5xl  mx-auto py-8">
         <h2 className="text-2xl font-bold text-center mb-6">
-          What Client Says About Us
+          {language === "en"
+            ? "What Client Says About Us"
+            : "क्लायंट आमच्याबद्दल काय म्हणतो"}
         </h2>
         <div ref={sliderRef} className="keen-slider">
           {testimonials.map((testimonial, index) => (
