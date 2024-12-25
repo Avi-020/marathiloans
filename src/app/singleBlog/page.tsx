@@ -3,7 +3,7 @@
 import React from "react";
 import { useLanguage } from "../Context/LanguageContext";
 
-const BlogPage = () => {
+function BlogPage() {
   const { language } = useLanguage();
 
   const english = [
@@ -147,6 +147,6 @@ const BlogPage = () => {
       ))}
     </div>
   );
-};
+}
 
 export default BlogPage;
