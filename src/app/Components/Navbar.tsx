@@ -29,9 +29,9 @@ function Navbar() {
             <Image
               src="/images/LOGO.svg"
               alt="logo"
-              width={200}
-              height={200}
-              // className="md:w-1/2"
+              width={230}
+              height={230}
+              // className="md:w-1/5 w-1/2"
             />
           </Link>
 
