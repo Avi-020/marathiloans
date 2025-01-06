@@ -20,7 +20,7 @@ export default function About() {
   const translations = language === "en" ? en : marathi;
   return (
     <>
-      <section className="relative ">
+      <section className="relative dark:bg-slate-800 dark:text-white ">
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-100">
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
@@ -104,7 +104,7 @@ export default function About() {
       {/* profile */}
       <>
         <div></div>
-        <div className="font-poppins text-black relative">
+        <div className="font-poppins text-black relative dark:bg-slate-800 dark:text-white">
           <div id="container" className="p-20 flex justify-center">
             {/* Main Wrapper */}
             <div className="p-20 sm:p-16 md:p-20 lg:p-24 flex flex-col md:flex-row px-4 sm:px-8 lg:px-24">
@@ -192,7 +192,7 @@ export default function About() {
 
         {/* four boxes */}
 
-        <div className="p-1 flex flex-wrap items-center justify-center">
+        <div className="p-1 flex flex-wrap items-center justify-center dark:bg-slate-800 dark:text-white">
           <div className="flex-shrink-0 m-10 relative overflow-hidden bg-[#80f2ff68]  max-w-2xs shadow-lg w-72 h-60  flex items-center justify-center">
             <div className="text-center  content-center">
               <div className=" block text-center">
@@ -241,7 +241,7 @@ export default function About() {
         {/* ENd  */}
 
         {/* why us start  */}
-        <div className="bg-white">
+        <div className="bg-white dark:bg-slate-800 dark:text-white">
           <section
             id="features"
             className="relative block px-6 py-10 md:py-20 md:px-10 "
@@ -253,7 +253,7 @@ export default function About() {
               <h2 className="block w-full bg-gradient-to-b from-black to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
                 {translations.about.WhyChooseUs.CoTittle}
               </h2>
-              <p className="mx-auto my-4 w-full max-w-xl bg-white text-center font-medium leading-relaxed tracking-wide text-gray-400">
+              <p className="mx-auto my-4 w-full dark:bg-slate-800 dark:text-white max-w-xl bg-white text-center font-medium leading-relaxed tracking-wide text-gray-400">
                 {translations.about.WhyChooseUs.description}
               </p>
             </div>

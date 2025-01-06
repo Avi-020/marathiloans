@@ -28,6 +28,7 @@ function ServicesPage() {
           backgroundImage: `url("/images/ServicesBG.svg")`,
           backgroundSize: "cover",
         }}
+        className="dark:bg-slate-800 dark:text-white"
       >
         <section>
           <div className="mx-auto max-w-screen-xl px-4  md:pb-80 sm:px-6 lg:px-8">
@@ -159,7 +160,7 @@ function ServicesPage() {
 
       {/* map img  */}
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8 dark:bg-slate-800 dark:text-white">
         <Image
           src="/images/mapIMG.svg"
           alt="ServicesIMG"

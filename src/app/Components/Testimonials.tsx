@@ -83,7 +83,7 @@ function Testimonials() {
     language === "en" ? ENGtestimonials : MARATHItestimonials;
 
   return (
-    <div>
+    <div className="dark:bg-slate-800 dark:text-white">
       <div className="max-w-5xl  mx-auto py-8">
         <h2 className="text-2xl font-bold text-center mb-6">
           {language === "en"
@@ -145,7 +145,7 @@ function Testimonials() {
                 </div>
               </div> */}
 
-              <div className="max-w-4xl mx-auto bg-gray-100 rounded-xl shadow-md overflow-hidden md:max-w-2xl ">
+              <div className="max-w-4xl mx-auto bg-gray-100 rounded-xl shadow-md overflow-hidden md:max-w-2xl dark:bg-slate-800 dark:text-white ">
                 <div className="md:flex">
                   <div className="md:shrink-0 p-10">
                     <Image

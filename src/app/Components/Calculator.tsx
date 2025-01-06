@@ -32,10 +32,10 @@ export default function Calculator() {
 
   return (
     <div
-      className="min-h-screen bg-gray-100 flex items-center justify-center"
+      className="min-h-screen bg-gray-100 flex items-center justify-center dark:bg-slate-800 dark:text-white"
       id="emi-calculator"
     >
-      <div className="bg-white p-8 rounded shadow-md max-w-md w-full">
+      <div className="bg-white p-8 rounded shadow-md max-w-md w-full dark:bg-slate-800 dark:text-white">
         <h1 className="text-2xl font-bold mb-4 text-center">
           {language === "en" ? "EMI Calculator" : "ईएमआय कॅल्क्युलेटर"}
         </h1>

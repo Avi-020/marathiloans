@@ -80,7 +80,7 @@ function ContactPage() {
   return (
     <div>
       <div
-        className="min-h-screen pb-32   flex justify-center"
+        className="min-h-screen pb-32   flex justify-center dark:bg-slate-800 dark:text-white"
         style={{
           backgroundImage: `url("/images/contactBG.svg")`,
           backgroundSize: "cover",
@@ -152,7 +152,7 @@ function ContactPage() {
       </div>
 
       {/* FAQ start  */}
-      <section className="py-10 bg-gray-50 sm:py-16 lg:py-24">
+      <section className="py-10 bg-gray-50 sm:py-16 lg:py-24 dark:bg-slate-800 dark:text-white">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
@@ -161,7 +161,7 @@ function ContactPage() {
                 : "वारंवार विचारले जाणारे प्रश्न"}
             </h2>
           </div>
-          <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
+          <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16 dark:text-black">
             {faqs.map((faq, index) => (
               <div
                 key={index}

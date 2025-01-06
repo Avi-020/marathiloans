@@ -37,7 +37,7 @@ function HeroSection() {
           backgroundImage: `url("/images/BG.png")`,
           backgroundSize: "cover",
         }}
-        className=" md:bg-contain "
+        className=" md:bg-contain dark:bg-slate-800 "
       >
         <section>
           <div className="mx-auto max-w-screen-xl px-4  md:pb-52 sm:px-6 lg:px-8">
@@ -50,13 +50,13 @@ function HeroSection() {
                   <p className="mt-4 text-[#D9D9D9] md:text-xl text-l">
                     {translations.heroSection.subtitle}
                   </p>
-                  <button className="bg-[#FFD780] mt-4 hover:bg-[#FFD750] text-black  py-2 px-4 rounded-full inline-flex	">
-                    <File size={20} className="mr-1.5 mt-1 md:mr-2" />
+                  <button className="bg-[#FFD780] mt-4 hover:bg-[#FFD750] text-black md:text-l text-s py-2 px-2 md:px-4 rounded-full inline-flex	">
+                    <File size={20} className="mr-2 mt-1 " />
 
                     {translations.heroSection.btn1}
                   </button>{" "}
                   <br />
-                  <button className="bg-white mt-4 hover:bg-slate-300 text-black  py-2 px-4 rounded-full inline-flex">
+                  <button className="bg-white mt-4 hover:bg-slate-300 text-black md:text-l text-s  py-2 px-4 rounded-full inline-flex">
                     <PhoneCall size={20} className="mr-2 mt-1" />
 
                     {translations.heroSection.btn2}
@@ -79,7 +79,7 @@ function HeroSection() {
       </div>
 
       {/* feature start */}
-      <section className="bg-slate-50 dark:bg-gray-900">
+      <section className="bg-slate-50 dark:bg-slate-800">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="max-w-screen-md mb-8 lg:mb-16">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
@@ -92,7 +92,7 @@ function HeroSection() {
           <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <ClipboardText size={32} />
+                <ClipboardText size={32} className="dark:text-white" />
               </div>
               <h3 className="mb-2 text-xl font-bold dark:text-white">
                 {translations.features.point1.title}
@@ -103,7 +103,7 @@ function HeroSection() {
             </div>
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <Pencil size={32} />
+                <Pencil size={32} className="dark:text-white" />
               </div>
               <h3 className="mb-2 text-xl font-bold dark:text-white">
                 {" "}
@@ -115,7 +115,7 @@ function HeroSection() {
             </div>
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <File size={32} />
+                <File size={32} className="dark:text-white" />
               </div>
               <h3 className="mb-2 text-xl font-bold dark:text-white">
                 {translations.features.point2.title}
@@ -126,7 +126,7 @@ function HeroSection() {
             </div>
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <MapTrifold size={32} />
+                <MapTrifold size={32} className="dark:text-white" />
               </div>
               <h3 className="mb-2 text-xl font-bold dark:text-white">
                 {translations.features.point3.title}
@@ -137,7 +137,7 @@ function HeroSection() {
             </div>
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <Tag size={32} />
+                <Tag size={32} className="dark:text-white" />
               </div>
               <h3 className="mb-2 text-xl font-bold dark:text-white">
                 {" "}
@@ -149,7 +149,7 @@ function HeroSection() {
             </div>
             <div>
               <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                <Handshake size={32} />
+                <Handshake size={32} className="dark:text-white" />
               </div>
               <h3 className="mb-2 text-xl font-bold dark:text-white">
                 {" "}
@@ -167,7 +167,7 @@ function HeroSection() {
       {/* feature end  */}
 
       {/* list start   key points  */}
-      <section className="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden antialiased">
+      <section className="relative min-h-screen flex flex-col justify-center dark:bg-slate-800 dark:text-white bg-slate-50 overflow-hidden antialiased">
         <div className="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
           <h2 className="text-4xl font-bold text-center mb-6">
             {translations.KeyPoints.title}
@@ -183,7 +183,7 @@ function HeroSection() {
                   <div className="md:flex items-center md:space-x-4 mb-3">
                     <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
                       <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
-                        <ChartBar size={32} />
+                        <ChartBar size={32} className="dark:text-black" />
                       </div>
                       <time className="text-sm font-medium text-indigo-500 md:w-28"></time>
                     </div>
@@ -202,7 +202,7 @@ function HeroSection() {
                   <div className="md:flex items-center md:space-x-4 mb-3">
                     <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
                       <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
-                        <Check size={32} />
+                        <Check size={32} className="dark:text-black" />
                       </div>
                       <time className="text-sm font-medium text-indigo-500 md:w-28"></time>
                     </div>
@@ -221,7 +221,7 @@ function HeroSection() {
                   <div className="md:flex items-center md:space-x-4 mb-3">
                     <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
                       <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
-                        <Bank size={32} />
+                        <Bank size={32} className="dark:text-black" />
                       </div>
                       <time className="text-sm font-medium text-indigo-500 md:w-28"></time>
                     </div>
@@ -240,7 +240,7 @@ function HeroSection() {
                   <div className="md:flex items-center md:space-x-4 mb-3">
                     <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
                       <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
-                        <MapTrifold size={32} />
+                        <MapTrifold size={32} className="dark:text-black" />
                       </div>
                       <time className="text-sm font-medium text-indigo-500 md:w-28"></time>
                     </div>
@@ -259,7 +259,7 @@ function HeroSection() {
                   <div className="md:flex items-center md:space-x-4 mb-3">
                     <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
                       <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
-                        <Building size={32} />
+                        <Building size={32} className="dark:text-black" />
                       </div>
                       <time className="text-sm font-medium text-indigo-500 md:w-28"></time>
                     </div>
@@ -278,7 +278,7 @@ function HeroSection() {
                   <div className="md:flex items-center md:space-x-4 mb-3">
                     <div className="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
                       <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1">
-                        <FileText size={32} />
+                        <FileText size={32} className="dark:text-black" />
                       </div>
                       <time className="text-sm font-medium text-indigo-500 md:w-28"></time>
                     </div>
@@ -301,7 +301,7 @@ function HeroSection() {
 
       {/* four boxes */}
 
-      <div className="p-1 flex flex-wrap items-center justify-center">
+      <div className="p-1 flex flex-wrap items-center justify-center dark:bg-slate-800 dark:text-white">
         <div className="flex-shrink-0 m-10 relative overflow-hidden bg-[#80f2ff68]  max-w-2xs shadow-lg w-72 h-60  flex items-center justify-center">
           <div className="text-center  content-center">
             <div className=" block text-center">
